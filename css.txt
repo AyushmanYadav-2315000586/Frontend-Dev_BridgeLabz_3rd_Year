@@ -1,0 +1,6 @@
+CSS: To give additional information and make our website look more attractive.
+
+Types of CSS:
+1). Inline
+2). Internal
+3). External
