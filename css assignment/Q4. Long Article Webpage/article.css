@@ -1,0 +1,85 @@
+/* === Global Reset & Base Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.7;
+  padding: 2rem 10%;
+}
+
+/* === Header Styling === */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #004aad;
+  margin-bottom: 0.3em;
+}
+
+header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* === Article Paragraph Styling === */
+article p {
+  margin-bottom: 1.8em; /* spacing between paragraphs */
+  text-align: justify;
+}
+
+/* ::first-letter - larger and colored for visual emphasis */
+article p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004aad;
+}
+
+/* ::first-line - bold for introductory emphasis */
+article p::first-line {
+  font-weight: bold;
+}
+
+/* === Highlighted <mark> Styling === */
+mark {
+  background-color: #ffea85; /* custom soft yellow */
+  padding: 0.1em 0.3em;
+  border-radius: 4px; /* smoother look */
+  color: #222;
+}
+
+/* === Blockquote Styling === */
+blockquote {
+  border-left: 5px solid #004aad; /* colored left border */
+  background-color: #e3f2fd; /* light blue background for emphasis */
+  padding: 1.5em 2em;
+  margin: 2.5em 0;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* soft shadow for depth */
+}
+
+/* === Responsive Readability Adjustment === */
+@media (max-width: 600px) {
+  body {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
+}

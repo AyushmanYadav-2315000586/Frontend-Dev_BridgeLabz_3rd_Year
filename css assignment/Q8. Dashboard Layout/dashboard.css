@@ -1,0 +1,91 @@
+/* ====== Global Styles ====== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f5f7fa;
+}
+
+/* ====== Header ====== */
+header {
+  position: fixed;                  /* stays at top */
+  top: 0;
+  width: 100%;
+  background-color: #004aad;        /* blue header */
+  color: white;
+  padding: 1rem 2rem;
+  z-index: 1000;                    /* ensures header stays above everything */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ====== Dashboard Layout ====== */
+.dashboard {
+  display: flex;
+  margin-top: 70px;                 /* offset for fixed header */
+  min-height: calc(100vh - 70px);   /* full height minus header */
+}
+
+/* ====== Sidebar ====== */
+.sidebar {
+  width: 220px;
+  background-color: #e3f2fd;
+  padding: 2rem 1rem;
+  flex-shrink: 0;                   /* prevents sidebar from shrinking */
+  height: auto;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+}
+
+.sidebar nav a {
+  display: block;
+  text-decoration: none;
+  color: #004aad;
+  font-weight: 600;
+  padding: 0.6rem 0;
+  transition: color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for links */
+.sidebar nav a:hover {
+  color: #002f6c;
+  transform: translateX(4px);
+}
+
+/* ====== Main Content ====== */
+.content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Content boxes */
+.box {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation for interactivity */
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;         /* stack sidebar on top */
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+}

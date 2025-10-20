@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #004aad;
+  color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.photo .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  opaci/* ====== Global Styles ====== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ====== Header Styling ====== */
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #004aad;
+  color: white;
+}
+
+/* ====== Gallery Container ====== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+/* ====== Individual Photo Card ====== */
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+/* Image inside the photo box */
+.photo img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Caption overlay */
+.photo .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+}
+
+/* ====== Hover Effects ====== */
+.photo:hover {
+  transform: scale(1.05);
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
+.photo:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+ty: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.1);
+}
+
+.photo:hover .caption {
+  opacity: 1;
+}

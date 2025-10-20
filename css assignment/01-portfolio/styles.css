@@ -1,0 +1,119 @@
+/* === Global Reset and Base Styling === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ensures padding doesn't add extra width */
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  background-color: #f5f8ff; /* soft blueish background for contrast */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ensures footer stays at bottom */
+}
+
+/* === Header Section === */
+header {
+  position: fixed; /* keeps header at top on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #004aad; /* strong blue with white text for contrast */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3%; /* responsive horizontal padding using % */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000; /* ensures header stays above all elements */
+}
+
+header h1 {
+  font-size: 1.5rem; /* rem unit for scalability */
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1.5em; /* em depends on current font-size */
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffde59; /* subtle yellow hover for contrast */
+}
+
+/* === Main Section === */
+main {
+  flex: 1; /* pushes footer to bottom */
+  margin-top: 80px; /* spacing below fixed header */
+  padding: 3rem 10%; /* rem + % for responsive spacing */
+  display: flex;
+  flex-wrap: wrap; /* ensures responsive layout */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* === Bio Section === */
+.bio {
+  max-width: 700px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image Styling */
+.bio img {
+  width: 160px; /* px unit for fixed size */
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%; /* circular profile */
+  border: 3px solid #004aad; /* color accent */
+  margin-bottom: 1.5em;
+}
+
+/* Bio Text */
+.bio p {
+  font-size: 1.1rem;
+  line-height: 1.6; /* improves readability */
+  color: #333;
+}
+
+/* === Footer Section === */
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9rem;
+  margin-top: auto; /* pushes footer to bottom if content is short */
+}
+
+/* === Responsive Design (for smaller screens) === */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  nav a {
+    margin: 0.5em 0 0 0;
+    display: inline-block;
+  }
+
+  main {
+    padding: 2rem 5%;
+  }
+
+  .bio {
+    padding: 1.5em;
+  }
+}

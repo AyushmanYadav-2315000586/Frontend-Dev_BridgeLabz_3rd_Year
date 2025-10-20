@@ -1,0 +1,108 @@
+/* === Global Reset & Base Styling === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border don’t overflow */
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  background-color: #f4f6fc; /* soft background for contrast */
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 1.5em;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* === Team Section (Flexbox Layout) === */
+.team-container {
+  display: flex; /* aligns cards in one row */
+  justify-content: center; /* centers cards horizontally */
+  align-items: stretch; /* ensures equal height if possible */
+  flex-wrap: wrap; /* allows wrapping for smaller screens */
+  gap: 2rem; /* consistent gap between cards */
+  padding: 3rem 2rem;
+}
+
+/* === Team Member Cards === */
+.card {
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 12px; /* rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+  flex: 1 1 280px; /* responsive width with minimum base */
+  max-width: 320px;
+  text-align: center;
+  padding: 2em; /* inner spacing using box model */
+  margin: 0.5rem; /* outer spacing using box model */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for interactivity */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* === Highlighted Card (Team Lead) === */
+.card.lead {
+  background-color: #fff59d; /* warm yellow for attention */
+  border: 3px solid #fbc02d;
+  box-shadow: 0 6px 14px rgba(255, 193, 7, 0.3);
+  transform: scale(1.05); /* slightly larger to emphasize importance */
+}
+
+/* === Text Styling within Cards === */
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #004aad;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 1em;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* === Responsive Design (for small screens < 600px) === */
+@media (max-width: 600px) {
+  .team-container {
+    flex-direction: column; /* stacks cards vertically */
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%; /* cards take most of the screen width */
+  }
+}

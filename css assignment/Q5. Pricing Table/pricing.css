@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #004aad;
+  color: white;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* equal height */
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  background-color: #e3f2fd;
+}
+
+.plan.popular {
+  border: 2px solid #ff9800;
+  background-color: #fff3e0;
+}
+
+.plan h2 {
+  margin-top: 0;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #004aad;
+  color: white;
+  padding: 0.7em 1.2em;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #002f6c;
+}
+.plan h2 {
+  color: #004aad;
+  font-size: 1.5rem;
+}
+
+.plan ul li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.plan.popular h2 {
+  color: #ff9800;
+}
