@@ -53,7 +53,7 @@ This repository contains my daily learning progress, tasks, and reflections as I
 
 ## 📅 **Day 3 — Introduction to CSS**
 
-> **Date:** _11/10/2025_  
+> **Date:** _13/10/2025_  
 > **Topic:** Introduction to CSS & Styling Basics
 
 ### 🧩 What I Learned
@@ -76,7 +76,7 @@ This repository contains my daily learning progress, tasks, and reflections as I
 
 ## 📅 **Day 4 — Flexbox, Grid & Advanced CSS**
 
-> **Date:** _12/10/2025_  
+> **Date:** _30/10/2025_  
 > **Topic:** CSS Flexbox, Grid & Visual Enhancements
 
 ### 🧩 What I Learned
