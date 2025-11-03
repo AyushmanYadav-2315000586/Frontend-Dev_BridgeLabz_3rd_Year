@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Advanced Selectors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Advanced Selectors Demo</h1>
+
+      <form>
+        <!-- attribute selector: type="text" -->
+        <label>Text input: <input type="text" placeholder="Type here" /></label>
+        <label>Email: <input type="email" placeholder="mail" /></label>
+      </form>
+
+      <nav>
+        <ul>
+          <li><a href="https://example.com">Secure link</a></li>
+          <li><a href="http://example.org">Insecure link</a></li>
+          <li><a href="#section">Anchor</a></li>
+        </ul>
+      </nav>
+
+      <section class="list">
+        <p>List below demonstrates :nth-child, pseudo-elements, combinators.</p>
+        <ol>
+          <li>First item</li>
+          <li class="special">Second item</li>
+          <li>Third item</li>
+          <li>Fourth item</li>
+        </ol>
+
+        <p class="after-example">
+          This paragraph has a ::after pseudo-element.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

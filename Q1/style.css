@@ -1,0 +1,72 @@
+/* q1-borders.css */
+:root {
+  --gap: 1rem;
+  --box-bg: #fff;
+}
+/* Basic layout */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  background: #f3f6f9;
+  color: #222;
+}
+header,
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+.container {
+  display: flex;
+  gap: var(--gap);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Base box style */
+.box {
+  background: var(--box-bg);
+  padding: 1rem;
+  border-radius: 6px;
+  min-width: 160px;
+  text-align: center;
+  transition: border-color 0.25s ease, transform 0.2s ease;
+}
+.box:hover {
+  transform: translateY(-6px);
+}
+
+/* Different border styles and padding examples */
+.solid {
+  border: 4px solid #2c7be5;
+  padding: 10px;
+}
+.dashed {
+  border: 4px dashed #e8590c;
+  padding: 20px;
+  border-radius: 12px;
+}
+.double {
+  border: 6px double #37b24d;
+  padding: 30px;
+}
+.groove {
+  border: 6px groove #6f42c1;
+  padding: 18px;
+  border-radius: 18px;
+}
+
+/* Hover effect changing border color smoothly */
+.box:hover {
+  border-color: #ff6b6b;
+}
+
+/* Responsive wrap */
+@media (max-width: 640px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}

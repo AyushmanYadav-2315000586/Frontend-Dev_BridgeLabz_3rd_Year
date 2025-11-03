@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #eef3f8;
+}
+.box {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+/* 1: px fixed size */
+.box-px {
+  width: 180px;
+  height: 200px;
+  background: #ffd6a5;
+}
+
+/* 2: percent width and vh based min-height */
+.box-percent {
+  width: 60%;
+  min-height: 50vh;
+  background: #bde0fe;
+}
+
+/* 3: em height and max-width with overflow */
+.box-em {
+  height: 8em;
+  max-width: 220px;
+  overflow: auto;
+  background: #caffbf;
+  padding: 1.25rem;
+}
+
+/* Centering demonstration already in .stage using Flexbox */
+
+@media (min-width: 900px) {
+  .stage {
+    flex-direction: row;
+  }
+}

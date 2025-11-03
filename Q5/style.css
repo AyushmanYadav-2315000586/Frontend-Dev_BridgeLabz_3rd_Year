@@ -1,0 +1,61 @@
+/* Attribute selector targets text inputs */
+input[type="text"] {
+  border: 2px solid #74c0fc;
+  padding: 0.4rem;
+  border-radius: 6px;
+}
+
+/* Attribute selector: links that start with https */
+a[href^="https"] {
+  font-weight: 700;
+}
+
+/* Pseudo-classes */
+a:hover {
+  text-decoration: underline;
+}
+input:focus {
+  outline: 3px solid rgba(115, 103, 240, 0.18);
+  outline-offset: 3px;
+}
+
+/* nth-child selector */
+ol li:nth-child(2) {
+  background: #fff3bf;
+}
+ol li:nth-child(odd) {
+  padding: 0.4rem;
+}
+
+/* Pseudo-elements */
+.after-example::after {
+  content: " → extra note";
+  font-style: italic;
+}
+
+/* Combinators examples: */
+/* child combinator */
+nav > ul {
+  list-style: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* adjacent sibling */
+.special + li {
+  border-top: 1px dashed #ccc;
+  padding-top: 0.5rem;
+}
+
+/* general sibling */
+.special ~ li {
+  color: #6b7280;
+}
+
+/* descendant selector */
+.list p {
+  margin: 0 0 1rem;
+}
