@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
+.box1 {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 33%;
+}
+.box2 {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 33%;
+}
+.box3 {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 33%;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    background-color: green;
+  }
+}
