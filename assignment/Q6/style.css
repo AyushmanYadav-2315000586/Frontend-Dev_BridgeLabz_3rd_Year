@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f7fbff;
+  color: #071133;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.anim-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+/* moving box - horizontal */
+.box {
+  width: 80px;
+  height: 60px;
+  background: #3b82f6;
+  border-radius: 6px;
+  animation: moveX 2s ease-in-out infinite alternate;
+}
+
+/* bouncing ball */
+.ball {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f59e0b;
+  animation: bounceY 0.9s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+/* color changing text */
+.color-change {
+  animation: colorShift 3s ease-in-out infinite;
+  font-family: Segoe UI, Arial;
+  font-weight: 700;
+}
+
+/* keyframes */
+@keyframes moveX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(80px);
+  }
+}
+
+@keyframes bounceY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorShift {
+  0% {
+    color: #0b61ff;
+  }
+  50% {
+    color: #10b981;
+  }
+  100% {
+    color: #ef4444;
+  }
+}
+
+/* animation properties: iteration count & direction demonstrated via animation shorthand above */
+/* e.g., bounce is infinite; move uses alternate to reverse each cycle */
+
+@media (max-width: 700px) {
+  .anim-row {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}

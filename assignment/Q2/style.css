@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f8fafc;
+  color: #071133;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+.row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* tooltip wrapper positioned relative */
+.tip-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+/* trigger styles */
+.has-tip {
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+}
+
+/* tooltip - absolute, hidden by default */
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(6px);
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  white-space: nowrap;
+  background: #0b132b;
+  color: #fff;
+  font-size: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+/* arrow using pseudo-element */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #0b132b transparent transparent transparent;
+}
+
+/* show tooltip on hover of the trigger */
+.tip-wrap:hover .tooltip,
+.tip-wrap:focus-within .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+/* ensure tooltip is above and readable on small screens */
+@media (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+  .tooltip {
+    left: 50%;
+    right: auto;
+  }
+}

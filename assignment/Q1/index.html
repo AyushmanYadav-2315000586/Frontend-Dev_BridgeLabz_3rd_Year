@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pseudo-Classes Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>Pseudo-Classes Examples</h1></header>
+    <main>
+      <section class="examples">
+        <article>
+          <h2>&:hover (link)</h2>
+          <a href="#">Hover this link</a>
+          <p class="note">:hover — when cursor is over an element</p>
+        </article>
+
+        <article>
+          <h2>&:focus (input)</h2>
+          <label
+            >Focus input: <input type="text" placeholder="Tab into me"
+          /></label>
+          <p class="note">:focus — when element receives keyboard focus</p>
+        </article>
+
+        <article>
+          <h2>&:active (button)</h2>
+          <button>Press me</button>
+          <p class="note">:active — while element is being activated</p>
+        </article>
+
+        <article>
+          <h2>&:nth-child()</h2>
+          <ul class="nth-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+          <p class="note">:nth-child(odd/even) — select items by position</p>
+        </article>
+      </section>
+    </main>
+    <footer>Q1 — Pseudo-Classes</footer>
+  </body>
+</html>

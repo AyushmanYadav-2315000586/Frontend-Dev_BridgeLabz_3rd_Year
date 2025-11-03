@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+.card {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.08);
+  width: 100%;
+  max-width: 720px;
+}
+.controls {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+input[type="search"] {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+input:focus {
+  outline: 3px solid rgba(59, 130, 246, 0.14);
+  outline-offset: 3px;
+}
+.primary {
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  background: #0369a1;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+.primary:hover {
+  transform: translateY(-3px);
+}
+.dropdown select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}

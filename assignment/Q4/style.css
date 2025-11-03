@@ -1,0 +1,50 @@
+/* element selector: target all paragraphs */
+p {
+  color: #0b1742;
+  line-height: 1.6;
+}
+
+/* class selector */
+.highlight {
+  background: #fff7ed;
+  padding: 0.4rem;
+}
+
+/* id selector */
+#unique {
+  font-weight: 700;
+  color: #0b610b;
+}
+
+/* attribute selector: links starting with https */
+a[href^="https"] {
+  color: #0b61ff;
+  font-weight: 600;
+}
+a[href^="http"] {
+  color: #333;
+}
+
+/* child combinator (>) - direct children of .parent */
+.parent > p {
+  border-left: 3px solid #e6eefc;
+  padding-left: 0.6rem;
+}
+
+/* adjacent sibling (+) - style paragraph immediately after .sibling */
+.sibling + p {
+  margin-top: 0.6rem;
+  color: #6b7280;
+}
+
+/* general sibling (~) - style any later paragraphs after .sibling */
+.sibling ~ p {
+  font-style: italic;
+}
+
+/* descendant selector - p inside .parent regardless of depth */
+.parent p {
+  margin: 0.35rem 0;
+}
+
+/* comments explain each selector above */

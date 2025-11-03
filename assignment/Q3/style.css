@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f7f9fc;
+  color: #071133;
+}
+header,
+footer {
+  text-align: center;
+  padding: 0.8rem;
+  background: #fff;
+}
+
+/* grid layout for images */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 1rem auto;
+}
+.gallery figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.25s ease;
+  border-radius: 10px 10px 0 0;
+}
+
+/* overlay */
+.gallery figure::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.25s ease;
+}
+
+/* caption */
+.gallery figcaption {
+  padding: 0.6rem;
+  text-align: center;
+}
+
+/* hover effects - scale image and darken overlay */
+.gallery figure:hover img {
+  transform: scale(1.08);
+}
+.gallery figure:hover::after {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* rounded corners and shadow already applied */
+
+/* responsive: stack below 700px */
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
