@@ -28,7 +28,7 @@
   padding: 10px;
   width: 33%;
 }
-@media (min-width: 300px) and (max-width: 600px) {
+/* @media (min-width: 300px) and (max-width: 600px) {
   body {
     background-color: red;
   }
@@ -36,5 +36,11 @@
 @media (min-width: 900px) {
   body {
     background-color: green;
+  }
+} */
+
+@media (orientation: portrait) {
+  body {
+    background-color: yellow;
   }
 }

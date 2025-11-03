@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 80rem;
+}
+
+.card1,
+.card2,
+.card3 {
+  background: rgb(207, 202, 202);
+  width: 30%;
+  min-width: 20rem;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.card1:hover {
+  transform: translateY(-0.5rem) scale(1.05);
+  box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to bottom right, rgb(154, 18, 154), white);
+}
+.card2:hover {
+  transform: translateY(-0.5rem) scale(1.05);
+  box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to bottom right, rgb(78, 226, 226), white);
+}
+.card3:hover {
+  transform: translateY(-0.5rem) scale(1.05);
+  box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to bottom right, gold, white);
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+.card h1 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.card p {
+  color: #fff;
+}
+
+@media (max-width: 60rem) {
+  .parent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .card {
+    width: none;
+    min-width: none;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card h2 {
+    font-size: 1.8rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+}
