@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Combined Responsive Web Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">Demo</div>
+        <nav aria-label="Primary">
+          <ul class="nav">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#explain">What is Responsive?</a></li>
+            <li><a href="#cheats">Cheat Sheet</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container grid-main">
+      <section id="gallery" class="panel fade-in">
+        <h2>Image Gallery</h2>
+        <div class="gallery">
+          <img src="images/img1.jpg" alt="img1" />
+          <img src="images/img2.jpg" alt="img2" />
+          <img src="images/img3.jpg" alt="img3" />
+        </div>
+      </section>
+
+      <section id="explain" class="panel fade-in">
+        <h2>Responsive Design</h2>
+        <p>
+          Responsive design uses flexible grids, fluid media, and media queries
+          to adapt layouts to various screens.
+        </p>
+      </section>
+
+      <section id="cheats" class="panel fade-in">
+        <h2>Cheat Sheet Preview</h2>
+        <ul>
+          <li>
+            <code
+              >grid-template-columns: repeat(auto-fit, minmax(200px,
+              1fr));</code
+            >
+          </li>
+          <li><code>@media (max-width: 700px) { ... }</code></li>
+          <li><code>font-size: clamp(1rem, 2vw, 1.25rem);</code></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Contact: hello@example.com</p>
+    </footer>
+  </body>
+</html>

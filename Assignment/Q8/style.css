@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+}
+header,
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.compare {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+.item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  display: block;
+  transition: filter 300ms ease;
+}
+.item figcaption {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.filtered img {
+  filter: contrast(160%);
+}
+.filtered:hover img {
+  filter: none;
+}
+
+@media (max-width: 700px) {
+  .compare {
+    grid-template-columns: 1fr;
+  }
+}
