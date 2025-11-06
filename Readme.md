@@ -163,3 +163,28 @@ This repository contains my daily learning progress, tasks, and reflections as I
 ### 🧭 What’s Next
 
 > Next, we’ll **revise CSS** and explore more **Bootstrap components** such as **Carousel**, **Progress Bar**, and more to enhance web design skills.
+
+---
+
+## 📅 **Day 8 — Bootstrap Components & Responsive Design Revision**
+
+> **Date:** _06/11/2025_  
+> **Topic:** CSS Revision & Advanced Bootstrap Components (Carousel, Progress Bar, etc.)
+
+### 🧩 What I Learned
+
+- 🎨 **CSS Revision:** Revised essential styling concepts such as selectors, positioning, and box model  
+- ⚙️ **Bootstrap Components:** Explored **Carousel**, **Progress Bar**, and other UI components for better interactivity  
+- 🧱 **Responsive Layouts:** Strengthened understanding of responsive grids and layout alignment using Bootstrap  
+- 🌐 **Utility Classes:** Practiced using margin, padding, and display utilities for quick and clean styling  
+- 💡 **Integration:** Combined CSS and Bootstrap effectively to build modern, mobile-friendly designs  
+
+### 🧪 Task for the Day
+
+> Design a **responsive portfolio webpage** using **Bootstrap**, incorporating **Carousel** and **Progress Bar** components to demonstrate your understanding of responsive layouts.
+
+### 🧭 What’s Next
+
+> Next, we’ll begin with **Introduction to JavaScript**, learning how to make web pages **interactive** and **dynamic** using scripts.
+
+---
