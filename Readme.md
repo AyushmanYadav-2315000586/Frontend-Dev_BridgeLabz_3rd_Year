@@ -142,3 +142,24 @@ This repository contains my daily learning progress, tasks, and reflections as I
 > Next, we’ll begin with **Bootstrap**, learning how to use **prebuilt components** and **responsive utilities** to design **modern, mobile-first layouts** efficiently.
 
 ---
+
+## 📅 **Day 7 — Introduction to Bootstrap**
+
+> **Date:** _05/11/2025_  
+> **Topic:** Introduction to Bootstrap, Bootstrap Basics, Grids & Bootstrap CSS
+
+### 🧩 What I Learned
+
+- ⚡ **Introduction to Bootstrap:** Understood how Bootstrap simplifies web design with prebuilt components
+- 🧱 **Bootstrap Basics:** Explored containers, rows, and columns for structured layouts
+- 🎨 **Bootstrap Grids:** Learned about the 12-column grid system and responsive breakpoints
+- 🧩 **Bootstrap CSS Utilities:** Used spacing, text, and background utility classes for quick styling
+- 📱 **Mobile-first Design:** Practiced creating responsive layouts efficiently with minimal custom CSS
+
+### 🧪 Task for the Day
+
+> Design a **responsive portfolio webpage** using **Bootstrap**, applying grid layouts, responsive utilities, and basic Bootstrap components.
+
+### 🧭 What’s Next
+
+> Next, we’ll **revise CSS** and explore more **Bootstrap components** such as **Carousel**, **Progress Bar**, and more to enhance web design skills.
