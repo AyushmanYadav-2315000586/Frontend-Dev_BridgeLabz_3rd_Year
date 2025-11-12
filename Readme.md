@@ -228,7 +228,7 @@ This repository contains my daily learning progress, tasks, and reflections as I
 - ⚡ **Events:** Learned how to handle **user interactions** using event listeners such as `onclick`, `onchange`, and `onmouseover`.  
 - 🔤 **Strings:** Explored string manipulation methods like `concat()`, `toUpperCase()`, `toLowerCase()`, `slice()`, and `substring()`.  
 - 🧮 **Math Operations:** Practiced using **mathematical functions** and expressions within JavaScript for dynamic calculations.  
-- 🧱 **Arrays:** Understood how to create and manipulate arrays using methods like `push()`, `pop()`, `shift()`, `unshift()`, and `length`.  
+- 🧱 **Arrays:** Understood how to create and manipulate arrays using methods.  
 
 ### 🧪 Task for the Day
 
