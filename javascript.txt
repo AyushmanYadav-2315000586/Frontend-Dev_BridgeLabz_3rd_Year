@@ -1,0 +1,74 @@
+Features of JavaScript:
+    1. Scripting Language
+    2. Dynamically Typed
+    3. Single Thread
+    4. OOP
+    5. Virstual DOM
+    6. Robust in nature
+    7. Event Driven
+    8. Platform Independent
+    9. Functional and procedural
+    10.Server and Client side
+
+Variables:
+    1. Undefined - A variable declared but not assigned a value.
+    2. null - Intentional absence of value.
+    3. BigInt - Used for integers larger than Number.MAX_SAFE_INTEGER.
+    4. Boolean - True or false values.
+    5. number - Represents both integer and floating-point numbers.
+    6. string - Sequence of characters.
+
+
+| Category          | Data Types                                               |
+| ----------------- | -------------------------------------------------------- |
+| **Primitive**     | Number, String, Boolean, Undefined, Null, BigInt, Symbol |
+| **Non-Primitive** | Object (includes arrays, functions, etc.)                |
+
+
+Variable Declarations:
+
+| Keyword   | Scope    | Reassignment | Redeclaration | Hoisting Behavior             |
+| --------- | -------- | ------------ | ------------- | ----------------------------- |
+| **var**   | Function | ✅ Yes        | ✅ Yes      | Hoisted with *undefined*      |
+| **let**   | Block    | ✅ Yes        | ❌ No       | Hoisted but *not initialized* |
+| **const** | Block    | ❌ No         | ❌ No       | Hoisted but *not initialized* |
+
+
+Hoisting: variable and function declarations are moved to the top of their scope before the code is executed.
+
+    console.log(a); -> undefined
+    var a = 10;
+
+    let and const
+
+    console.log(b); // ❌ ReferenceError
+    let b = 20;
+
+
+| Keyword      | Hoisted? | Default Value   | Can Access Before Declaration? |
+| ------------ | -------- | --------------- |------------------------------- |
+| **var**      | ✅ Yes  | `undefined`     | ✅ Yes (but value is undefined) |
+| **let**      | ✅ Yes  | *uninitialized* | ❌ No (TDZ error)               |
+| **const**    | ✅ Yes  | *uninitialized* | ❌ No (TDZ error)               |
+| **function** | ✅ Yes  | Function body   | ✅ Yes                          |
+
+
+Operators:
+    1. Arithmetic
+    2. Relational/Comarison
+    3. Logical
+    4. Bitwise
+    5. Ternary
+    6. Unary
+    7. nullish coalsecing
+    8. Raise to power
+    9. Assignment
+    10.Type
+
+
+Control Statements:
+    1. Conditional (if-else, switch)
+    2. Iterative (for, while, do-while, for-in, for-of)
+
+
+Continue, Break, Return are called JUMP statements
