@@ -173,11 +173,11 @@ This repository contains my daily learning progress, tasks, and reflections as I
 
 ### 🧩 What I Learned
 
-- 🎨 **CSS Revision:** Revised essential styling concepts such as selectors, positioning, and box model  
-- ⚙️ **Bootstrap Components:** Explored **Carousel**, **Progress Bar**, and other UI components for better interactivity  
-- 🧱 **Responsive Layouts:** Strengthened understanding of responsive grids and layout alignment using Bootstrap  
-- 🌐 **Utility Classes:** Practiced using margin, padding, and display utilities for quick and clean styling  
-- 💡 **Integration:** Combined CSS and Bootstrap effectively to build modern, mobile-friendly designs  
+- 🎨 **CSS Revision:** Revised essential styling concepts such as selectors, positioning, and box model
+- ⚙️ **Bootstrap Components:** Explored **Carousel**, **Progress Bar**, and other UI components for better interactivity
+- 🧱 **Responsive Layouts:** Strengthened understanding of responsive grids and layout alignment using Bootstrap
+- 🌐 **Utility Classes:** Practiced using margin, padding, and display utilities for quick and clean styling
+- 💡 **Integration:** Combined CSS and Bootstrap effectively to build modern, mobile-friendly designs
 
 ### 🧪 Task for the Day
 
@@ -188,3 +188,29 @@ This repository contains my daily learning progress, tasks, and reflections as I
 > Next, we’ll begin with **Introduction to JavaScript**, learning how to make web pages **interactive** and **dynamic** using scripts.
 
 ---
+
+## 📅 **Day 9 — Introduction to JavaScript**
+
+> **Date:** _10/11/2025_  
+> **Topic:** Introduction to JavaScript, Types, Operators, Logical Operators, Math, and Control Structures
+
+### 🧩 What I Learned
+
+- ⚡ **Introduction to JavaScript:** Understood how JavaScript adds interactivity and dynamic behavior to web pages
+- 🔢 **JavaScript Data Types:** Learned about primitive and non-primitive types — `String`, `Number`, `Boolean`, `Object`, `Undefined`, and `Null`
+- ➕ **Operators:** Explored arithmetic, assignment, comparison, and logical operators
+- 🧮 **Math in JavaScript:** Practiced using the `Math` object for calculations (`Math.round()`, `Math.floor()`, `Math.random()`, etc.)
+- 🔁 **Control Structures:** Studied how to control program flow using `if`, `else if`, `else`, `switch`, and loops (`for`, `while`, `do-while`)
+- 🧠 **Logical Operations:** Applied `&&`, `||`, and `!` to build conditions and handle logic efficiently
+
+### 🧪 Task for the Day
+
+> Write a JavaScript program that takes two numbers as input and performs:
+>
+> - Addition, Subtraction, Multiplication, and Division
+> - Checks if the first number is greater than the second using logical and comparison operators
+> - Displays results dynamically using `alert()` or `console.log()`
+
+### 🧭 What’s Next
+
+> In the next session, we’ll continue with **Operators**, covering **Scope**, **Events**, **Strings**, **Math**, **Arrays**, **Boolean**, **Comparisons**, and **Conditions** to deepen our understanding of data handling and user interactions in JavaScript.
