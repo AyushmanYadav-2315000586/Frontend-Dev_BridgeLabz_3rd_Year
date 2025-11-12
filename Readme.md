@@ -214,3 +214,34 @@ This repository contains my daily learning progress, tasks, and reflections as I
 ### 🧭 What’s Next
 
 > In the next session, we’ll continue with **Operators**, covering **Scope**, **Events**, **Strings**, **Math**, **Arrays**, **Boolean**, **Comparisons**, and **Conditions** to deepen our understanding of data handling and user interactions in JavaScript.
+
+---
+
+## 📅 **Day 10 — JavaScript Scope, Events, Strings & Arrays**
+
+> **Date:** _12/11/2025_  
+> **Topic:** JavaScript Scope, Events, Strings & Arrays
+
+### 🧩 What I Learned
+
+- 🧠 **Scope:** Understood how variable visibility works in JavaScript — including **global**, **local**, and **block** scope using `var`, `let`, and `const`.  
+- ⚡ **Events:** Learned how to handle **user interactions** using event listeners such as `onclick`, `onchange`, and `onmouseover`.  
+- 🔤 **Strings:** Explored string manipulation methods like `concat()`, `toUpperCase()`, `toLowerCase()`, `slice()`, and `substring()`.  
+- 🧮 **Math Operations:** Practiced using **mathematical functions** and expressions within JavaScript for dynamic calculations.  
+- 🧱 **Arrays:** Understood how to create and manipulate arrays using methods like `push()`, `pop()`, `shift()`, `unshift()`, and `length`.  
+
+### 🧪 Task for the Day
+
+> Practice programs that demonstrate:  
+> - Different **types of variable scopes** in JavaScript  
+> - Handling **button click events** to trigger changes dynamically  
+> - Performing **string manipulations** (uppercase, lowercase, slicing)  
+> - Creating and updating **arrays** with various operations  
+
+### 🧭 What’s Next
+
+> In the next session, we’ll move forward with **JavaScript ES Features**, covering **Switch**, **Loops**, **Functions**, and **Arrow Functions** to enhance coding efficiency and modern JavaScript skills.  
+>  
+> Make sure to complete all pending exercises and review the covered topics for better understanding of these foundational concepts.
+
+---
