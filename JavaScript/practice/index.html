@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="Variables.js"></script>
+    <!-- <script src="Variables.js"></script>
     <script src="Math_Functions.js"></script>
     <script src="Operators.js"></script>
     <script src="Array.js"></script>
     <script src="Object.js"></script>
     <script src="Functions.js"></script>
     <script src="Control_Statements.js"></script>
-    <script src="Scope.js"></script>
-    <script src="Event.js"></script>
+    <script src="Scope.js"></script> -->
     <style>
       .container {
         height: 200px;
@@ -22,22 +21,24 @@
       .bg-red {
         background-color: red;
       }
+      .bg-green {
+        background-color: green;
+      }
+      .bg-blue {
+        background-color: blue;
+      }
+      .bg-yellow {
+        background-color: yellow;
+      }
     </style>
   </head>
   <body>
     <button id="myButton">Click</button>
     <div class="container"></div>
-    <button class="btn-clr-change">Color Change To Red</button>
-    <script>
-      const btn = document.getElementById("myButton");
-      btn.addEventListener("dblclick", () => {
-        console.log("Clicked");
-      });
-      const divContainer = document.querySelector(".container");
-      const btnClrChange = document.querySelector(".btn-clr-change");
-      btnClrChange.addEventListener("click", () => {
-        divContainer.classList.toggle("bg-red");
-      });
-    </script>
+    <button class="btn-red">Color Change To Red</button>
+    <button class="btn-green">Color Change To Green</button>
+    <button class="btn-blue">Color Change To Blue</button>
+    <button class="btn-yellow">Color Change To Yellow</button>
+    <script src="Event.js"></script>
   </body>
 </html>
