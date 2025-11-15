@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script src="class_assignment1.js"></script>
-    <script src="class_assignment2.js"></script>
-</body>
+    <style>
+      .counter {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .inc,
+      .inc-2 {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      .dec {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+      .counter-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 140px;
+      }
+      .resize {
+        height: 200px;
+        width: 200px;
+      }
+      .move {
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Move Up Down Left Right</h1>
+      <img class="move" src="image.png" alt="" />
+      <div>
+        <button class="up">Up</button>
+        <button class="down">Down</button>
+        <button class="left">Left</button>
+        <button class="right">Right</button>
+        <button class="reset">Reset</button>
+      </div>
+    </div>
+    <script src="class_assignment(gif_move).js"></script>
+    <div class="container">
+      <h1>Image Height Width Resize</h1>
+      <img class="resize" src="image.png" alt="" />
+      <div>
+        <button class="inc-height">Increase Height</button>
+        <button class="inc-width">Increase Width</button>
+      </div>
+    </div>
+
+    <div class="counter-container">
+      <h1>Counter</h1>
+      <div class="counter"></div>
+      <div>
+        <button class="inc">Increment</button>
+        <button class="inc-2">+2</button>
+        <button class="dec">Decrement</button>
+      </div>
+    </div>
+
+    <script src="class_assignment(Counter).js"></script>
+    <script src="class_assignment(image resize).js"></script>
+  </body>
 </html>

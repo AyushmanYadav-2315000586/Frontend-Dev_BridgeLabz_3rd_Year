@@ -7,16 +7,47 @@
     <!-- <script src="Variables.js"></script>
     <script src="Math_Functions.js"></script>
     <script src="Operators.js"></script>
-    <script src="Array.js"></script>
     <script src="Object.js"></script>
     <script src="Functions.js"></script>
     <script src="Control_Statements.js"></script>
-    <script src="Scope.js"></script> -->
+    <script src="Scope.js"></script>
+    <script src="String.js"></script> -->
+    <script src="Array.js"></script>
     <style>
       .container {
         height: 200px;
         width: 200px;
-        border: 2px solid black;
+        border: 2px solid white;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+      }
+      .container:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+      button {
+        padding: 10px;
+        margin: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+      }
+      .btn-red:hover {
+        background-color: red;
+        color: white;
+      }
+      .btn-green:hover {
+        background-color: green;
+        color: white;
+      }
+      .btn-blue:hover {
+        background-color: blue;
+        color: white;
+      }
+      .btn-yellow:hover {
+        background-color: yellow;
+        color: white;
       }
       .bg-red {
         background-color: red;
@@ -30,15 +61,44 @@
       .bg-yellow {
         background-color: yellow;
       }
+      .outer-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .baap{
+        background-color: black;
+      }
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
     </style>
   </head>
   <body>
-    <button id="myButton">Click</button>
-    <div class="container"></div>
-    <button class="btn-red">Color Change To Red</button>
-    <button class="btn-green">Color Change To Green</button>
-    <button class="btn-blue">Color Change To Blue</button>
-    <button class="btn-yellow">Color Change To Yellow</button>
+    <div class="baap">
+      <button id="myButton">Click</button>
+      <div class="outer-container">
+        <div class="inner-container">
+          <div class="container"></div>
+          <div class="btn">
+            <button class="btn-red">Color Change To Red</button>
+            <button class="btn-green">Color Change To Green</button>
+            <button class="btn-blue">Color Change To Blue</button>
+            <button class="btn-yellow">Color Change To Yellow</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="Event.js"></script>
   </body>
 </html>
