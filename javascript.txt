@@ -72,3 +72,29 @@ Control Statements:
 
 
 Continue, Break, Return are called JUMP statements
+
+
+Errors: These are the programmatical mistakes that are created by the developers.
+
+Types of Errors: 
+    1. Syntax Errors
+    2. Type Errors
+    3. ReferenceErrors
+    4. URI(Uniform Resource Identifier) Errors
+
+Exceptions comes inside errors in JavaScript
+
+try Block: The try block is used to test a block of code for errors.
+catch Block: The catch block is used to handle the error.
+finally Block: The finally block is used to execute code, regardless of the result of the try and catch blocks.
+
+
+Hoisting: It is a Behavior of JavaScript where it moves the declaration of variables, functions and classes to the top of their scope during compilation before the code is executed.
+
+    Two phases of Hoisting:
+        1. Memory phase (Declaration phase)
+        2. Execution phase (Initialization phase)
+
+    TDZ: Temporal Dead Zone - The period of time during which a variable is not accessible. (The code between error and variable declaration is TDZ)
+
+Debugging: Debugging is the process of finding and fixing errors in a program.
