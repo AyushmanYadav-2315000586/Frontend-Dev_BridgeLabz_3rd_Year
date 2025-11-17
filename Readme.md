@@ -293,3 +293,43 @@ This repository contains my daily learning progress, tasks, and reflections as I
 > Be prepared for more hands-on tasks and real-time interaction with DOM elements.
 
 ---
+
+## 📅 **Day 12 — JavaScript Classes, Objects & Responsive Sidebar**
+
+> **Date:** _17/11/2025_  
+> **Topic:** JavaScript ES Classes, Objects, Hoisting Recap & Responsive Hamburger Menu
+
+### 🧩 What I Learned
+
+- 🏗️ **JavaScript ES Classes:**  
+  Understood how to define classes, create objects, and use constructors & methods.
+
+- 📦 **Objects in JavaScript:**  
+  Explored object creation, accessing properties, modifying values, and using methods inside objects.
+
+- 🔁 **Quick Recap — Hoisting & Functions:**  
+  Revised how hoisting works with variables and functions to avoid common errors.
+
+- 🍔 **Hamburger Menu using Media Queries:**  
+  Practiced building a **responsive hamburger icon** and a **responsive sidebar menu** that appears on smaller screens.
+
+### 🧪 Task for the Day
+
+> Build a **Hamburger Menu + Sidebar Navigation** using:
+>
+> - Media Queries
+> - DOM Manipulation
+> - Responsive Layout Techniques
+>
+> Ensure it works smoothly on mobile screens.
+
+### 🧭 What’s Next
+
+> In the next session, we will explore:
+>
+> - **HTML Forms with JavaScript**
+> - **JavaScript RegExp (Regular Expressions)**
+>
+> This will help you handle user inputs and perform validations effectively.
+
+---
