@@ -224,24 +224,72 @@ This repository contains my daily learning progress, tasks, and reflections as I
 
 ### 🧩 What I Learned
 
-- 🧠 **Scope:** Understood how variable visibility works in JavaScript — including **global**, **local**, and **block** scope using `var`, `let`, and `const`.  
-- ⚡ **Events:** Learned how to handle **user interactions** using event listeners such as `onclick`, `onchange`, and `onmouseover`.  
-- 🔤 **Strings:** Explored string manipulation methods like `concat()`, `toUpperCase()`, `toLowerCase()`, `slice()`, and `substring()`.  
-- 🧮 **Math Operations:** Practiced using **mathematical functions** and expressions within JavaScript for dynamic calculations.  
-- 🧱 **Arrays:** Understood how to create and manipulate arrays using methods.  
+- 🧠 **Scope:** Understood how variable visibility works in JavaScript — including **global**, **local**, and **block** scope using `var`, `let`, and `const`.
+- ⚡ **Events:** Learned how to handle **user interactions** using event listeners such as `onclick`, `onchange`, and `onmouseover`.
+- 🔤 **Strings:** Explored string manipulation methods like `concat()`, `toUpperCase()`, `toLowerCase()`, `slice()`, and `substring()`.
+- 🧮 **Math Operations:** Practiced using **mathematical functions** and expressions within JavaScript for dynamic calculations.
+- 🧱 **Arrays:** Understood how to create and manipulate arrays using methods.
 
 ### 🧪 Task for the Day
 
-> Practice programs that demonstrate:  
-> - Different **types of variable scopes** in JavaScript  
-> - Handling **button click events** to trigger changes dynamically  
-> - Performing **string manipulations** (uppercase, lowercase, slicing)  
-> - Creating and updating **arrays** with various operations  
+> Practice programs that demonstrate:
+>
+> - Different **types of variable scopes** in JavaScript
+> - Handling **button click events** to trigger changes dynamically
+> - Performing **string manipulations** (uppercase, lowercase, slicing)
+> - Creating and updating **arrays** with various operations
 
 ### 🧭 What’s Next
 
-> In the next session, we’ll move forward with **JavaScript ES Features**, covering **Switch**, **Loops**, **Functions**, and **Arrow Functions** to enhance coding efficiency and modern JavaScript skills.  
->  
+> In the next session, we’ll move forward with **JavaScript ES Features**, covering **Switch**, **Loops**, **Functions**, and **Arrow Functions** to enhance coding efficiency and modern JavaScript skills.
+>
 > Make sure to complete all pending exercises and review the covered topics for better understanding of these foundational concepts.
+
+---
+
+## 📅 **Day 11 — JavaScript ES Features, DOM & Practical Applications**
+
+> **Date:** _13/11/2025_  
+> **Topic:** JavaScript ES Features — DOM, Hoisting, Functions & Arrow Functions
+
+### 🧩 What I Learned
+
+- 🌐 **DOM (Document Object Model):**  
+  Understood how to access and manipulate HTML elements dynamically using `getElementById`, `querySelector`, and property updates.
+
+- 🚀 **Hoisting:**  
+  Learned how JavaScript moves **variable and function declarations** to the top of their scope, affecting how code executes.
+
+- ⚙️ **Functions & Arrow Functions:**  
+  Explored:
+
+  - Regular functions
+  - Arrow function syntax
+  - Differences and benefits of using arrow functions
+  - Cleaner and modern approach to writing JS functions
+
+- 🖱️ **Hands-on DOM Projects:**  
+  ✔️ Built a **Counter Application** using DOM  
+  ✔️ Implemented **Image Resize functionality** with dynamic DOM manipulation
+
+### 🧪 Task for the Day
+
+> Recreate both projects covered in class:
+>
+> - **Counter App** using DOM methods and event listeners
+> - **Image Resize App** using width/height manipulation
+>
+> Add comments in your JS file explaining each step clearly.
+
+### 🧭 What’s Next
+
+> In the next session, we will move ahead with:
+>
+> - **JavaScript Classes**
+> - **Arrays & Objects** (advanced handling)
+> - **HTML Forms with JS**
+> - **JavaScript RegExp (Regular Expressions)**
+>
+> Be prepared for more hands-on tasks and real-time interaction with DOM elements.
 
 ---
