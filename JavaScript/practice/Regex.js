@@ -1,0 +1,4 @@
+// Regex
+
+const regex = /regex/;
+

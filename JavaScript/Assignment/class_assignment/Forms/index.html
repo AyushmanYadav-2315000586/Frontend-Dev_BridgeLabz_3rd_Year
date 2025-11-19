@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms with Error Handling</title>
+    <style>
+      .output {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="name" />
+    <br />
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" />
+    <br />
+    <button type="submit">Submit</button>
+    <p class="output"></p>
+    <script>
+      let name = document.querySelector("#name");
+      let email = document.querySelector("#email");
+      let submit = document.querySelector("button");
+      let output = document.querySelector(".output");
+      submit.addEventListener("click", () => {
+        if (name.value.trim() === "" && email.value.trim() === "") {
+          alert("Please enter name and email");
+          return;
+        } else if (name.value.trim() === "") {
+          alert("Please enter name");
+          return;
+        } else if (email.value.trim() === "") {
+          alert("Please enter email");
+          return;
+        } else if (email.value.indexOf("@") === -1) {
+          alert("Please enter valid email");
+          return;
+        } else {
+          showOutput().then(showPopUp);
+        }
+      });
+      function showOutput() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            output.innerHTML = `Name: ${name.value} <br> Email: ${email.value}`;
+            resolve();
+          }, 500);
+        })();
+      }
+      function showPopUp() {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            alert("Form submitted successfully");
+            resolve();
+          }, 1000);
+        })();
+      }
+    </script>
+  </body>
+</html>
