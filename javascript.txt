@@ -98,3 +98,27 @@ Hoisting: It is a Behavior of JavaScript where it moves the declaration of varia
     TDZ: Temporal Dead Zone - The period of time during which a variable is not accessible. (The code between error and variable declaration is TDZ)
 
 Debugging: Debugging is the process of finding and fixing errors in a program.
+
+
+J_Query = jQuery is a lightweight JavaScript library created to make JavaScript easier.
+
+    $(selector).action();
+
+    $ → jQuery function
+    selector → which element you want
+    action → what you want to do with it
+
+AJAX = Asynchronous JavaScript And XML
+(but today it usually works with JSON, not XML)
+
+    Asynchronous: It is a way to perform multiple tasks simultaneously without blocking the main thread.
+
+    JSON = JavaScript Object Notation
+
+    API = Application Programming Interface
+
+---------------------------------------------
+    Your JS Code  →  Server  →  Response  
+     ↑                         ↓
+   Page keeps running (no refresh)
+---------------------------------------------

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .bg-red {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Document Object Model</h1>
+    </div>
+    <div class="para-box">
+      <p class="para-one">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, porro.
+      </p>
+      <p class="para-two">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, porro.
+      </p>
+      <button class="btn-toggle">Fade Toggle</button>
+      <div class="container">Container</div>
+      <button class="btn-fadeIn">fadeIn</button>
+      <button class="btn-fadeOut">fadeOut</button>
+      <button class="btn-fadeTo">fadeTo</button>
+    </div>
+    <p class="count-display"></p>
+    <script>
+      //${selector}.action()
+      $(".para-one").text("This is a new text");
+      //   $(".btn-toggle").on("click", () => {
+      //     alert("Button Clicked");
+      //   });
+      $(".btn-toggle").click(() => {
+        //(".box").hide();
+        //(".box").show();
+        //(".box").fadeIn();
+        // $(".box").fadeOut();
+        // $(".box").fadeTo(1000, 0.5); // 0.5 opacity in 1000ms
+        $(".box").fadeToggle();
+      });
+      $(".btn-fadeIn").click(() => {
+        $(".box").fadeIn();
+      });
+      $(".btn-fadeOut").click(() => {
+        $(".box").fadeOut();
+      });
+      $(".btn-fadeTo").click(() => {
+        $(".box").fadeTo(1000, 1);
+      });
+      let count = 0;
+      $(".box").mouseover(() => {
+        count++;
+        $(".count-display").text(count);
+      });
+      $(".container").addClass("bg-red").css({
+        padding: "10px",
+        color: "white",
+        borderRadius: "5px",
+        margin: "5px",
+      });
+    </script>
+  </body>
+</html>
