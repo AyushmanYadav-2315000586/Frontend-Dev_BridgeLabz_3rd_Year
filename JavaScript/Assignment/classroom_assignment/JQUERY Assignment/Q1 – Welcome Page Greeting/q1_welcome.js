@@ -14,4 +14,5 @@ $(document).ready(function () {
     $("#mainGreeting").click(function () {
         alert("Greeting clicked!");
     });
+    
 });
