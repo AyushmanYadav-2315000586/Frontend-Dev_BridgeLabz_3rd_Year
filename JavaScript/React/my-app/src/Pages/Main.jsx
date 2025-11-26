@@ -1,4 +1,4 @@
-import ProfileCard from "./ProfileCard";
+import ProfileCard from "../Components/ProfileCard";
 import Me from "../Me.jpeg";
 import "./Main.css";
 export default function Main() {
