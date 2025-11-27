@@ -4,6 +4,10 @@ import Button from "../Components/Button";
 function Home() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("");
+  const [inputName, setInputName] = useState("");
+  function handleName(e) {
+    setInputName(e.target.value);
+  }
   function handleIncrement() {
     setCount(count + 1);
   }
@@ -13,8 +17,8 @@ function Home() {
   function handleDecrement() {
     setCount(count - 1);
   }
-  function handleChangeName(e) {
-    setName(e.target.value);
+  function handleClick() {
+    setName(inputName);
   }
   return (
     <div className="home-page">
@@ -28,9 +32,15 @@ function Home() {
       <div>
         <input
           type="text"
+          onChange={handleName}
           placeholder="Enter Your Name"
-          onChange={handleChangeName}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              handleClick();
+            }
+          }}
         />
+        <button onClick={handleClick}>Submit</button>
         <h2>Hii: {name}</h2>
       </div>
     </div>
